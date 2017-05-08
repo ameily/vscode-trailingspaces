@@ -1,5 +1,7 @@
 sudo: false
-
+language: node_js
+node_js:
+  - 'node'
 os:
   - osx
   - linux
@@ -10,7 +12,6 @@ before_install:
       sh -e /etc/init.d/xvfb start;
       sleep 3;
     fi
-  - npm install -g npm@latest
 
 install:
   - npm install
