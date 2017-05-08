@@ -6,7 +6,7 @@
   "publisher": "shardulm94",
   "icon": "icon.png",
   "engines": {
-    "vscode": "^0.10.1"
+    "vscode": "^0.11.0"
   },
   "categories": [
     "Other"
