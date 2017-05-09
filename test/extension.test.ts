@@ -91,8 +91,10 @@ describe("Extension Tests", () => {
 
     afterEach((done: MochaDone) => {
         console.log("Reverting changes");
-        vscode.commands.executeCommand("workbench.action.files.revert").then(() => {
-            done();
+        vscode.commands.executeCommand("workbench.action.files.revert").then((value: {}) => {
+            setTimeout(function() {
+                done();
+            },400);
         });
     });
 
